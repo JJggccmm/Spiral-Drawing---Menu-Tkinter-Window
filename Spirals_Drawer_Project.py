@@ -122,49 +122,6 @@ def bt_click():
     val_03 = int(ed3.get())
     val_04 = int(ed4.get())
 
-def bt_click_3():
-
-    global flag
-    flag = 0
-
-    tat.clear()
-
-    global bt7
-
-    bt7.destroy()
-
-    bt7 = Button(janela,bg = cores[random.randint(0,19)],fg = cores[random.randint(0,19)],height = 1,width = 7, text= "RAmDoM", command=bt_click_5)
-    bt7.place(x= 4, y = 563)
-
-    global bt6
-
-    bt6.destroy()
-
-    bt6 = Button(janela,bg = 'white',height = 1,width = 7, text= "∞", command=bt_click_6)
-    bt6.place(x= 4, y = 537)
-
-def bt_click_4():
-
-    lis_cores = ['lime','red','fuchsia','darkslategrey','turquoise','gray','black','mediumslateblue','navy','lightcyan','aqua','blue','orange','indigo','yellow','lawngreen','lavender','crimson','rosybrown','darkred']
-    tat.pencolor(lis_cores[random.randint(0,19)])
-
-def bt_click_5():
-
-    global val_01
-    global val_02
-    global val_03
-    global val_04
-
-    val_01 = random.randint(-999,999)
-    val_02 = random.randint(-999,999)
-    val_03 = random.randint(-999,999)
-    val_04 = random.randint(-360,360)
-
-def bt_click_6():
-
-    global flag
-    flag = 1
-
 lb2 = Label(janela, text="                                         :                                           :                                           :                                          ", background='white')
 lb2.place(x=66, y=620)
 
