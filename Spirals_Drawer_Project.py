@@ -126,6 +126,18 @@ def bt_click_4():
 
     lis_cores = ['lime','red','fuchsia','darkslategrey','turquoise','gray','black','mediumslateblue','navy','lightcyan','aqua','blue','orange','indigo','yellow','lawngreen','lavender','crimson','rosybrown','darkred']
     tat.pencolor(lis_cores[random.randint(0,19)])
+       
+def bt_click_5():
+
+    global val_01
+    global val_02
+    global val_03
+    global val_04
+
+    val_01 = random.randint(-999,999)
+    val_02 = random.randint(-999,999)
+    val_03 = random.randint(-999,999)
+    val_04 = random.randint(-360,360)    
 
 lb2 = Label(janela, text="                                         :                                           :                                           :                                          ", background='white')
 lb2.place(x=66, y=620)
@@ -147,6 +159,9 @@ bt2.place(x= 4, y = 616)
 
 bt4 = Button(janela,bg = 'red',height = 1,width = 2, text= ">:(", command=bt_click_3)
 bt4.place(x= 4, y = 511)
+
+bt5 = Button(janela,bg = 'white',fg = 'magenta',height = 1,width = 10, text= "★Color~",font=Mistral24, command=bt_click_4)
+bt5.place(x= 4, y = 588)
 
 
 s1.update()
