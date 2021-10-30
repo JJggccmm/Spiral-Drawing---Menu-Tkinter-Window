@@ -121,6 +121,11 @@ def bt_click():
     val_02 = int(ed2.get())
     val_03 = int(ed3.get())
     val_04 = int(ed4.get())
+    
+def bt_click_4():
+
+    lis_cores = ['lime','red','fuchsia','darkslategrey','turquoise','gray','black','mediumslateblue','navy','lightcyan','aqua','blue','orange','indigo','yellow','lawngreen','lavender','crimson','rosybrown','darkred']
+    tat.pencolor(lis_cores[random.randint(0,19)])
 
 lb2 = Label(janela, text="                                         :                                           :                                           :                                          ", background='white')
 lb2.place(x=66, y=620)
@@ -139,6 +144,9 @@ ed4.place(x= 461, y= 620)
 
 bt2 = Button(janela,bg = 'white',height = 1,width = 7, text= " ✍Apply ", command=bt_click)
 bt2.place(x= 4, y = 616)
+
+bt4 = Button(janela,bg = 'red',height = 1,width = 2, text= ">:(", command=bt_click_3)
+bt4.place(x= 4, y = 511)
 
 
 s1.update()
