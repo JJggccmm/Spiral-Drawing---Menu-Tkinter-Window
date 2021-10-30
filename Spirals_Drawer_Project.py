@@ -122,6 +122,27 @@ def bt_click():
     val_03 = int(ed3.get())
     val_04 = int(ed4.get())
     
+def bt_click_3():
+
+    global flag
+    flag = 0
+
+    tat.clear()
+
+    global bt7
+
+    bt7.destroy()
+
+    bt7 = Button(janela,bg = cores[random.randint(0,19)],fg = cores[random.randint(0,19)],height = 1,width = 7, text= "RAmDoM", command=bt_click_5)
+    bt7.place(x= 4, y = 563)
+
+    global bt6
+
+    bt6.destroy()
+
+    bt6 = Button(janela,bg = 'white',height = 1,width = 7, text= "∞", command=bt_click_6)
+    bt6.place(x= 4, y = 537)    
+    
 def bt_click_4():
 
     lis_cores = ['lime','red','fuchsia','darkslategrey','turquoise','gray','black','mediumslateblue','navy','lightcyan','aqua','blue','orange','indigo','yellow','lawngreen','lavender','crimson','rosybrown','darkred']
@@ -170,6 +191,9 @@ bt5.place(x= 4, y = 588)
 
 bt6 = Button(janela,bg = 'white',height = 1,width = 7, text= "∞", command=bt_click_6)
 bt6.place(x= 4, y = 537)
+
+bt7 = Button(janela,bg = cores[random.randint(0,19)],fg = cores[random.randint(0,19)],height = 1,width = 7, text= "RAmDoM", command=bt_click_5)
+bt7.place(x= 4, y = 563)
 
 s1.update()
 
